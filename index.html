@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Datalibris | Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 2.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .project {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .project:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .project img {
+      width: 100%;
+      display: block;
+    }
+    .project .info {
+      padding: 1rem;
+    }
+    .project h3 {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Portafolio de Visualizaciones</h1>
+  <div class="grid">
+    <div class="project">
+      <a href="proyecto1.html">
+        <img src="thumbs/proyecto1.jpg" alt="Visualización 1">
+        <div class="info">
+          <h3>Nombre del Proyecto 1</h3>
+          <p>Breve descripción de la visualización.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="project">
+      <a href="https://tuvisualizacion.com">
+        <img src="thumbs/proyecto2.jpg" alt="Visualización 2">
+        <div class="info">
+          <h3>Nombre del Proyecto 2</h3>
+          <p>Breve descripción del proyecto.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
