@@ -2,71 +2,115 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Datalibris | Portafolio</title>
+  <title>Datalibris | Visualizaciones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      background: #fff;
       margin: 0;
-      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f6f8fa;
+      color: #2a2a2a;
     }
-    h1 {
+    header {
+      background: #f2f4f5;
+      color: #333;
+      padding: 3rem 2rem 2rem;
       text-align: center;
-      padding: 2rem 0;
-      font-size: 2.5rem;
+      border-bottom: 1px solid #ddd;
     }
-    .grid {
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 500;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.15rem;
+      color: #555;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
     }
     .project {
-      border: 1px solid #eee;
+      background: #fff;
+      border: 1px solid #e1e4e8;
       border-radius: 8px;
       overflow: hidden;
-      transition: box-shadow 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
     }
     .project:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.06);
     }
     .project img {
       width: 100%;
+      height: auto;
       display: block;
     }
-    .project .info {
-      padding: 1rem;
+    .project h2 {
+      font-size: 1.3rem;
+      margin: 1rem 1rem 0.5rem;
+      color: #1f2933;
+      font-weight: 500;
     }
-    .project h3 {
-      margin: 0;
+    .project p {
+      margin: 0 1rem 1.5rem;
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+      background: #f2f4f5;
+      border-top: 1px solid #ddd;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover h2 {
+      color: #007acc;
     }
   </style>
 </head>
 <body>
-  <h1>Portafolio de Visualizaciones</h1>
-  <div class="grid">
+  <header>
+    <h1>Datalibris</h1>
+    <p>Explora visualizaciones, gráficos y proyectos sobre alfabetización de datos, ciencia abierta e IA</p>
+  </header>
+
+  <div class="container">
     <div class="project">
       <a href="proyecto1.html">
-        <img src="thumbs/proyecto1.jpg" alt="Visualización 1">
-        <div class="info">
-          <h3>Nombre del Proyecto 1</h3>
-          <p>Breve descripción de la visualización.</p>
-        </div>
+        <img src="thumbs/proyecto1.jpg" alt="Proyecto 1">
+        <h2>Visualización: Datos abiertos en Europa</h2>
+        <p>Una visualización interactiva de datos abiertos utilizando Flourish para mostrar tendencias por país.</p>
       </a>
     </div>
 
     <div class="project">
       <a href="https://tuvisualizacion.com">
-        <img src="thumbs/proyecto2.jpg" alt="Visualización 2">
-        <div class="info">
-          <h3>Nombre del Proyecto 2</h3>
-          <p>Breve descripción del proyecto.</p>
-        </div>
+        <img src="thumbs/proyecto2.jpg" alt="Proyecto 2">
+        <h2>Mapa interactivo: bibliotecas y acceso digital</h2>
+        <p>Desarrollado con Leaflet y datos públicos, este mapa ilustra el acceso digital en servicios bibliotecarios.</p>
       </a>
     </div>
   </div>
+
+  <footer>
+    &copy; 2025 Datalibris · Visualización, datos abiertos y alfabetización crítica.
+  </footer>
 </body>
 </html>
